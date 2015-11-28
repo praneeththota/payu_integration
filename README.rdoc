@@ -4,8 +4,11 @@ This README would normally document whatever steps are necessary to get the
 application up and running.
 
 Add Gem gem 'payuindia', :git => 'git://github.com/payu-india/payuindia.git'
+
 bundle install
+
 Check cart controller show and payu_callback action
+
 change payu_callback action from 'get' to 'post'
 
 
@@ -18,6 +21,9 @@ Test Card Number: 5123456789012346
 Test CVV: 123
 
 Test Expiry: May 2017
+
+#############################################################
+
 
 
 Below are the parameters received from pay_u team to payu_callback action:
