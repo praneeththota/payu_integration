@@ -1,0 +1,13 @@
+<p>list of cart items </p>
+<% payment_form_for_payu 'merchant_key', 'merchant_salt',
+    :txnid => @cart_no,
+    :amount => 2.0,
+    :productinfo => 'ProductInfo',
+    :firstname => 'first_name',
+	  :email => 'youremail@domain.com',
+	 	:phone => '1234567890',
+	 	:service_provider => 'payu_paisa',
+	  :hash => @hash_val,
+	  :surl => 'http://localhost:3000/cart/payu_callback',
+	  :furl => 'http://localhost:3000/cart/payu_callback',
+	  :html => { :id => 'payment-form' } %>

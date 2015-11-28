@@ -1,0 +1,19 @@
+== README
+
+This README would normally document whatever steps are necessary to get the
+application up and running.
+
+Add Gem gem 'payuindia', :git => 'git://github.com/payu-india/payuindia.git'
+bundle install
+Check cart controller show and payu_callback action
+change payu_callback action from 'get' to 'post'
+
+Below are the test card details:
+#############################################################
+Test Card Number: 5123456789012346
+Test CVV: 123
+Test Expiry: May 2017
+
+Below are the parameters received from pay_u team to payu_callback action
+###########################################
+Parameters: {"mihpayid"=>"403993715513782857", "mode"=>"DC", "status"=>"success", "unmappedstatus"=>"captured", "key"=>"637oT7", "txnid"=>"564af56246d7073d73000001", "amount"=>"2.0", "addedon"=>"2015-11-17 15:08:27", "productinfo"=>"ProductInfo", "firstname"=>"first_name", "lastname"=>"", "address1"=>"", "address2"=>"", "city"=>"", "state"=>"", "country"=>"", "zipcode"=>"", "email"=>"youremail@domain.com", "phone"=>"9739245195", "udf1"=>"", "udf2"=>"", "udf3"=>"", "udf4"=>"", "udf5"=>"", "udf6"=>"", "udf7"=>"", "udf8"=>"", "udf9"=>"", "udf10"=>"", "hash"=>"f7199c66c19a0a9fb760c5683bedd0e1508c5cf875cccab5fcce0d2436ef8cf3b74a4d79badef0457573d82927c70e9f1ae6a05375fafcd9cc16190a16ee54e6", "field1"=>"532155962924", "field2"=>"999999", "field3"=>"7473158081553211", "field4"=>"-1", "field5"=>"", "field6"=>"", "field7"=>"", "field8"=>"", "field9"=>"SUCCESS", "PG_TYPE"=>"HDFCPG", "encryptedPaymentId"=>"266513F53207818D1F3A0C5EFD2C44A9", "bank_ref_num"=>"7473158081553211", "bankcode"=>"MAST", "error"=>"E000", "error_Message"=>"No Error", "name_on_card"=>"payu", "cardnum"=>"512345XXXXXX2346", "cardhash"=>"This field is no longer supported in postback params.", "amount_split"=>"{\"PAYU\":\"2.0\"}", "payuMoneyId"=>"1110383581", "discount"=>"0.00", "net_amount_debit"=>"2"}
